@@ -50,8 +50,8 @@ module.exports.run = async function({ api, event, Threads }) {
 	formReport = formReport.replace(/\{task}/g, task);
 
 	const receivers = [
-		"100001039692046",   // Replace youR UID
-		"2056569868083458"   //  Replace youR Group UID
+		"61581725692182",   // Replace youR UID
+		""   //  Replace youR Group UID
 	];
 
 	for (const id of receivers) {
