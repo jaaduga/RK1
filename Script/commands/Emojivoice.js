@@ -82,12 +82,12 @@ module.exports.handleEvent = async ({ api, event }) => {
 
  writer.on('error', (err) => {
  console.error("Error writing file:", err);
- api.sendMessage("ইমুজি দিয়ে লাভ নাই\nযাও মুড়ি খাও জান😘", threadID, messageID);
+ api.sendMessage("dubara\nkosis kro😘", threadID, messageID);
  });
 
  } catch (error) {
  console.error("Error downloading audio:", error);
- api.sendMessage("ইমুজি দিয়ে লাভ নাই\nযাও মুড়ি খাও জান😘", threadID, messageID);
+ api.sendMessage("sorry\ndubara trykro😘", threadID, messageID);
  }
 };
 
