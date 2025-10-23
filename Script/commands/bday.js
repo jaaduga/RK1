@@ -25,7 +25,7 @@ module.exports.run = async ({ api, event }) => {
 
  if (diffDays === 1) {
  const tomorrowMessage =
-`👉Admin SHAHADAT SAHU এর জন্মদিন আগামীকাল!\n অবশেষে এডমিনের জন্মদিন ফাঁস হয়ে গেল!\n\n উইশ করতে ভুলবে না কিন্তু...🥰😘
+`👉Admin FAIZA KHAN कल जन्मदिन है!\n mere bos ka janmdivstha!\n\nलेकिन शुभकामना देना मत भूलना...🥰😘
 `;
  return api.sendMessage(tomorrowMessage, event.threadID, event.messageID);
  }
@@ -33,22 +33,22 @@ module.exports.run = async ({ api, event }) => {
  if (diffDays === 0) {
  const happyBirthdayMessage = 
 `╔═══ 🎉 𝐇𝐀𝐏𝐏𝐘 𝐁𝐈𝐑𝐓𝐇𝐃𝐀𝐘 🎉 ════╗
-║ 𝐎𝐔𝐑 𝐁𝐎𝐒𝐒 - 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔 💖 
+║ 𝐎𝐔𝐑 𝐁𝐎𝐒𝐒 - 𝗙𝗔𝗜𝗭𝗔𝗡 𝗞𝗛𝗔𝗡 💖 
 ╟─────────────────
 ║ 🎂 Everyone Please Wish Him Today! 
-║ 🥳 আজ আমাদের Boss এর জন্মদিন! 
-║ ❤️ মন থেকে উইশ করো সবাই! 
+║ 🥳 aaj he Boss ka janmdin! 
+║ ❤️ sabhee log apane dil se ek ichchha karen 
 ╟─────────────────
 ║ 📩 Connect With Him: 
 ║ ➤ 📘 Facebook : 
-║ www.facebook.com/61575698041722 
+║  https://www.facebook.com/61581725692182
 ║ ➤ 💬 Messenger : 
-║ m.me/61575698041722 
+║ m.me/ 61581725692182
 ║ ➤ 📱 WhatsApp : 
-║ https://wa.me/+8801882333052 
+║ https://wa.me/+9197122☆☆☆☆☆ 
 ╟─────────────────
-║ 🫶 উইশ করো, দোয়া করো?
-║ এবং ভালোবাসা জানাও প্রিয় বস সাহুকে! ❤️‍🩹 
+║ 🫶 sabhi mere boss ko wish kro
+║ ❤️‍🩹 or use duaye do sabhu gurp memabdr
 ╚═════════════════════════╝`;
  return api.sendMessage(happyBirthdayMessage, event.threadID, event.messageID);
  }
@@ -56,16 +56,16 @@ module.exports.run = async ({ api, event }) => {
  if (diffDays < 0) {
  const leakMessage =
 `╔═══════════════════╗
-║ 🎂 Admin SHAHADAT SAHU
-║ এর জন্মদিন ফাঁস হয়ে গেছে ❤️‍🩹🤌
+║ 🎂 Admin FAIZAN KHAN
+║ janmdin aagya he ❤️‍🩹🤌
 ╚═══════════════════╝`;
  return api.sendMessage(leakMessage, event.threadID, event.messageID);
  }
 
  const countdownMessage = 
 `╔═══════════════════╗
-║ 🎂 Admin SHAHADAT SAHU
-║ এর জন্মদিন ফাঁস হয়ে গেছে ❤️‍🩹🤌
+║ 🎂 Admin FAIZAN KHAM
+║ unka jamndin aagya he ❤️‍🩹🤌
 ║═══════════════════
 ║ 📅 Days : ${diffDays}
 ║ ⏰ Hours : ${diffHours}
