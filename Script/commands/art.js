@@ -18,7 +18,7 @@ module.exports.run = async ({ api, event }) => {
  const { messageReply, threadID, messageID } = event;
 
  if (!messageReply || !messageReply.attachments || messageReply.attachments.length === 0) {
- return api.sendMessage("❌ অনুগ্রহ করে কোনো একটি ছবির রিপ্লাই দিন।", threadID, messageID);
+ return api.sendMessage("❌कृपया चित्र के साथ उत्तर दें", threadID, messageID);
  }
 
  const url = messageReply.attachments[0].url;
@@ -42,12 +42,12 @@ module.exports.run = async ({ api, event }) => {
  fs.writeFileSync(path, apiRes.data);
 
  api.sendMessage({
- body: "✅ AI artify করা হয়েছে!",
+ body: "✅ AI artify हो गया।",
  attachment: fs.createReadStream(path)
  }, threadID, () => fs.unlinkSync(path), messageID);
 
  } catch (err) {
  console.error(err);
- api.sendMessage("❌ কিছু একটা ভুল হয়েছে। আবার চেষ্টা করুন।", threadID, messageID);
+ api.sendMessage("❌कुछ गड़बड़ हुई है। कृपया दोबारा प्रयास करें।", threadID, messageID);
  }
 };
