@@ -67,11 +67,11 @@ module.exports.run = async function ({ event, api, args }) {
  const fs = global.nodemodule["fs-extra"];
  const { threadID, messageID, senderID } = event;
  const mention = Object.keys(event.mentions);
- if (!mention[0]) return api.sendMessage("আপনার ভাইকে মেনশন করুন ❤️‍🩹😙", threadID, messageID);
+ if (!mention[0]) return api.sendMessage("Apne bro ko mention karo na bhai❤️‍🩹😙", threadID, messageID);
  else {
  const one = senderID, two = mention[0];
  return makeImage({ one, two }).then(path => api.sendMessage({
- body: `🌸•❖•━━━━━━━━━•❖•🌸\n           ✧•❁ 𝐓𝐞𝐫𝐚 𝐁𝐚𝐢 ❁•✧\n🌸•❖•━━━━━━━━━•❖•🌸\n\n🤝 বন্ধুত্বের বাঁধন আজ আরও শক্ত হলো 💖\n\n 🫱 এই নে! রাখ তোর ভাইরে ❤️\n\n 👑 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐅𝐎𝐑𝐄𝐕𝐄𝐑 🩷\n\n🌸•❖•━━━━━━━━━━•❖•🌸`,
+ body: `🌸•❖•━━━━━━━━━•❖•🌸\n           ✧•❁ 𝐓𝐞𝐫𝐚 𝐁𝐚𝐢 ❁•✧\n🌸•❖•━━━━━━━━━•❖•🌸\n\n🤝 Dosti ka rishta aur strong ho gaya bro 💖\n\n 🫱 Ye le! Apna bhai hamesha tere sath ❤️\n\n 👑 𝐁𝐑𝐎𝐓𝐇𝐄𝐑 𝐅𝐎𝐑𝐄𝐕𝐄𝐑 🩷\n\n🌸•❖•━━━━━━━━━━•❖•🌸`,
  attachment: fs.createReadStream(path)
  }, threadID, () => fs.unlinkSync(path), messageID));
  }
