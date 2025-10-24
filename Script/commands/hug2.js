@@ -98,6 +98,6 @@ module.exports.run = async function ({ event, api }) {
  }, threadID, () => fs.unlinkSync(imagePath), messageID);
  } catch (e) {
  console.error(e);
- return api.sendMessage("❌ ছবিটি তৈরি করতে সমস্যা হয়েছে!", threadID, messageID);
+ return api.sendMessage("❌ Image generate karne me problem hui!", threadID, messageID);
  }
 };
