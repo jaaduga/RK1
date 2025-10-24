@@ -64,23 +64,23 @@ async function circle(image) {
 }
 
 const crushCaptions = [
-  "প্রেমে যদি অপূর্ণতাই সুন্দর হয়, তবে পূর্ণতার সৌন্দর্য কোথায়?❤️",
-  "যদি বৃষ্টি হতাম… তোমার দৃষ্টি ছুঁয়ে দিতাম! চোখে জমা বিষাদটুকু এক নিমেষে ধুয়ে দিতাম🤗",
-  "তোমার ভালোবাসার প্রতিচ্ছবি দেখেছি বারে বার💖",
-  "তোমার সাথে একটি দিন হতে পারে ভালো, কিন্তু তোমার সাথে সবগুলি দিন হতে পারে ভালোবাসা🌸",
-  "এক বছর নয়, কয়েক জন্ম শুধু তোমার প্রেমে পরতে পরতে ই চলে যাবে😍",
-  "কেমন করে এই মনটা দেব তোমাকে… বেসেছি যাকে ভালো আমি, মন দিয়েছি তাকে🫶",
-  "পিছু পিছু ঘুরলে কি আর প্রেম হয়ে যায়… কাছে এসে বাসলে ভালো, মন পাওয়া যায়❤️‍🩹",
-  "তুমি থাকলে নিজেকে এমন সুখী মনে হয়, যেনো আমার জীবনে কোনো দুঃখই নেই😊",
-  "তোমার হাতটা ধরতে পারলে মনে হয় পুরো পৃথিবীটা ধরে আছি🥰",
-  "তোমার প্রতি ভালো লাগা যেনো প্রতিনিয়ত বেড়েই চলছে😘"
+  "Prem me agar adhoorta hi sundar hai, to poornata ka saundar kahan?❤️",
+  "Agar barish hoti… tumhari nazar chhoo leti! Aankhon me jama udaasi ek pal me dhul jaati🤗",
+  "Tumhari prem ki pratibimb maine baar baar dekha💖",
+  "Tumhare sath ek din acha ho sakta hai, lekin tumhare sath saare din prem ho sakta hai🌸",
+  "Ek saal nahi, kuch janm sirf tumhare prem me khone lagenge😍",
+  "Kaise yeh dil doon tumhe… jise maine prem kiya, usko diya🫶",
+  "Peechhe peeche ghoomne se kya prem hota hai… pass aake baslo acha, dil milta hai❤️‍🩹",
+  "Tum ho to khud ko itna khush lagta hai jaise meri zindagi me koi dukh hi nahi😊",
+  "Tumhara haath pakadun to lagta hai poori duniya pakad li🥰",
+  "Tumhare liye accha lagna jaise lagatar badhta ja raha hai😘"
 ];
 
 module.exports.run = async function ({ event, api, args }) {
   const fs = global.nodemodule["fs-extra"];
   const { threadID, messageID, senderID } = event;
   const mention = Object.keys(event.mentions);
-  if (!mention[0]) return api.sendMessage("একজনকে মেনশন করো!", threadID, messageID);
+  if (!mention[0]) return api.sendMessage("Ek vyakti ko mention karo!", threadID, messageID);
   else {
     const one = senderID, two = mention[0];
     const caption = crushCaptions[Math.floor(Math.random() * crushCaptions.length)];
