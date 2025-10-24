@@ -11,12 +11,12 @@ module.exports.config = {
 
 module.exports.run = async function({ api, event }) {
     const message = 
-        "🌟 আসসালামু আলাইকুম সম্মানিত বট ইউজার 🌟\n\n" +
-        "আপনি যদি তৈরি করতে চান, তাহলে চলে যেতে পারেন আমাদের ইউটিউব চ্যানেলে। " +
-        "সেখানে গিয়ে ভিডিও দেখে আপনি খুব সহজে বট তৈরি করে নিতে পারবেন। " +
-        "তাহলে আর দেরি না করে এখনি চলে যান আমাদের ইউটিউব চ্যানেলে।\n\n" +
-        "➤ YouTube Channel: https://youtube.com/@scb-community\n\n" +
-        "🔗 GitHub Fork Link: https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT";
+        "🌟 Assalamu Alaikum Sammanit Bot User 🌟\n\n" +
+        "Agar aap bot banana chahte hain, to aap humare boss faizan ko bolo sikha dega" +
+        "mere boss ki id me jake kho vo apko sikha dege kese bot bnate he" +
+        "ya fir mere boss Faizan khan ka bot us kro apne gurp meor enjoy kro।\n\n" +
+        "➤ YouTube Channel: sorry abhi pending he\n\n" +
+        "🔗 GitHub Fork Link mil jaye ga mere boss ke pas se";
 
     return api.sendMessage(message, event.threadID, event.messageID);
 };
