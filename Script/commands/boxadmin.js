@@ -60,27 +60,27 @@ module.exports.run = async function({ api, event, args }) {
     const targetIsAdmin = threadInfo.adminIDs.some(admin => admin.id == uid);
 
     if (!botIsAdmin && uid !== event.senderID) 
-      return api.sendMessage("এই কমান্ডটি Usage  করার জন্য আগে আমাকে গ্রুপের এডমিন দিতে হবে 🌺", threadID, event.messageID);
+      return api.sendMessage("Pehle mujhe group ka admin banao tab ye command chalega🌺", threadID, event.messageID);
 
     if (action === "add") {
       if (targetIsAdmin) 
-        return api.sendMessage(`${targetName} আগে থেকেই গ্রুপের এডমিন রয়েছেন ✅`, threadID, event.messageID);
+        return api.sendMessage(`${targetName} pehle se hi group ka admin hai ✅`, threadID, event.messageID);
 
       await api.changeAdminStatus(threadID, uid, true);
       if (uid === event.senderID) 
-        return api.sendMessage(`✅ ${senderName} নিজেকে এডমিন বানিয়েছে! 🌸`, threadID, event.messageID);
+        return api.sendMessage(`✅ ${senderName} ne khud ko admin bana liya!🌸`, threadID, event.messageID);
       else 
-        return api.sendMessage(`✅ ${senderName} ${targetName}-কে এডমিন বানিয়েছে! 😘`, threadID, event.messageID);
+        return api.sendMessage(`✅ ${senderName} ${targetName}-ko group ka admin bana diya!😘`, threadID, event.messageID);
 
     } else if (action === "remove") {
       if (!targetIsAdmin) 
-        return api.sendMessage(`${targetName} এখনো গ্রুপের এডমিন নয়! ❌`, threadID, event.messageID);
+        return api.sendMessage(`${targetName} abhi tak admin nahi hai! ❌`, threadID, event.messageID);
 
       await api.changeAdminStatus(threadID, uid, false);
       if (uid === event.senderID) 
-        return api.sendMessage(` ${senderName} নিজেকে এডমিন থেকে রিমুভ করেছে! 🐸`, threadID, event.messageID);
+        return api.sendMessage(` ${senderName} ne khud ko admin se remove kar liya! 🐸`, threadID, event.messageID);
       else 
-        return api.sendMessage(` ${targetName} কে এডমিন থেকে রিমুভ করেছে! 🤣`, threadID, event.messageID);
+        return api.sendMessage(` ${targetName} ko admin se remove kar diya! 🤣`, threadID, event.messageID);
     }
 
   } catch (e) {
