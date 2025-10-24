@@ -16,7 +16,7 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
  try {
  if (Object.keys(event.mentions).length === 0) {
- return api.sendMessage("আপনি কাকে শুভেচ্ছা জানাতে চান এমন একজন কে মেনশন করুন!😘", event.threadID);
+ return api.sendMessage("jisko birthday wish krna hai us ko mention karo na !😘", event.threadID);
  }
 
  const mention = Object.keys(event.mentions)[0];
@@ -28,19 +28,19 @@ module.exports.run = async function ({ api, event, args }) {
  };
 
  
- sendMessage(`বস শাহাদাৎ সাহু'র পক্ষ থেকে তোমাকে জন্মদিনের শুভেচ্ছা, @${name}!\n🎉HAPPY BIRTHDAY🎉`);
+ sendMessage(`Boss Faizan khan ki taraf se tumhe janmadin ki hardik shubhkamnaye, @${name}!\n🎉HAPPY BIRTHDAY🎉`);
  const messages = [
- { delay: 3000, msg: `আরো একটি বছর করলে তুমি পার। সুস্থ থাকো, ভালো থাকো এই কামনাই করি বার বার!\n🥰শুভ জন্মদিন🥰 @${name}` },
- { delay: 6000, msg: `আনন্দ উল্লাসে কাটে যেন তোমার প্রতিটি দিন, শুভেচ্ছা জানাই আজ তোমায়!\n🥰শুভ জন্মদিন😍 @${name}` },
- { delay: 10000, msg: `জন্মদিনে শুভেচ্ছা নিও প্রিও~\nযদিও বিলম্বিত, বার্থডে ট্রিট পেলে বৎস হবো বড় প্রীত!\n🌼শুভ জন্মদিন🌼 @${name}` },
- { delay: 14000, msg: `আজ জন্মদিনে আনন্দ ও সুন্দর মুহুর্তে ভরে উঠুক এই কামনাই করি ...শুভ জন্মদিন @${name}` },
- { delay: 18000, msg: `ফুলে হাঁসিতে প্রাণের খুশিতে, অলিরা গানে গানে ফুলের কানে কানে, বলছে আজ সেই শুভ দিন।\n❦~শুভ জন্মদিন~❦ @${name}` },
- { delay: 22000, msg: `কামনা করি তুমি যেন পৃথিবীর সব সুখ আস্বাদন করতে পারো।\nশুভ জন্মদিন @${name}` },
- { delay: 26000, msg: `শুভ হোক তোমার আগামী দিন।💖\nতোমার এই মুখের হাসি যেন সারাজীবন এমনি থাকুক, হ্যাপি বার্থডে☺️ @${name}` },
- { delay: 30000, msg: `জন্মদিনের শুভেচ্ছা নিও প্রিয় @${name}!🎂\nতোমার পথ চলা হোক আনন্দের, ভালোবাসার ও সাফল্যের।` },
+ { delay: 3000, msg: `Ek aur saal ho gaya complete! Khush raho, healthy raho, yahi dua hai humari!\n🥰happpy birthday🥰 @${name}` },
+ { delay: 6000, msg: `Tumhara har din khushi aur pyaar se bhara rahe!\n 🥰Happy Birthday dear😍 @${name}` },
+ { delay: 10000, msg: `Thoda late sahi~\npar wish toh dil se hai 😋 Cake khana mat bhoolna!\n🌼happpy birthday🌼 @${name}` },
+ { delay: 14000, msg: `Tumhari zindagi khushiyon se mehke har din tumhara special bane @${name}` },
+ { delay: 18000, msg: `Dua karta hu tumhara har sapna poora ho 🤲 Enjoy your day।\n❦~happpy birthday~❦ @${name}` },
+ { delay: 22000, msg: `Hamesha muskurate raho aur zindagi me aise hi chamakte raho।\nhapppy birthday@${name}` },
+ { delay: 26000, msg: `Har pal tumhare liye।💖\nkhushiyon se bhara rahe 💕 aur tumhara face hamesha smile kare☺️ @${name}` },
+ { delay: 30000, msg: `Tumhara safar khushiyon, @${name}!🎂\n pyaar aur success se bhara rahe 🎈 Happy Birthday।` },
  { delay: 34000, msg: `many many happy returns of the day 🥰😘\n Happy Birthday🎂 @${name}` },
- { delay: 38000, msg: `মন থেকে দোয়া করি‌ সব‌ সময় সুখে থাকো ভালো থাকো 🥰 \nশুভ জন্মদিন @${name}!` },
- { delay: 42000, msg: `সবশেষে একটাই প্রত্যাশা সবসময় পাশে আছি ইনশাল্লাহ পাশে পাব🥰😘 @${name}` }
+ { delay: 38000, msg: `Dil se dua hai tumhe har khushi mile🥰 \n Happy Birthday🎂@${name}!` },
+ { delay: 42000, msg: `Bas ek hi baat  hamesha aise hi cute aur happy raho🥰😘 @${name}` }
  ];
 
  messages.forEach(({delay, msg}) => {
@@ -49,6 +49,6 @@ module.exports.run = async function ({ api, event, args }) {
 
  } catch (error) {
  console.error(error);
- api.sendMessage("বার্তা পাঠাতে সমস্যা হয়েছে!\nদয়া করে আবার চেষ্টা করুন!", event.threadID);
+ api.sendMessage("Kuch error aaya!\ndobara try karo", event.threadID);
  }
 };
