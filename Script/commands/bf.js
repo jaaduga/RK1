@@ -72,11 +72,11 @@ module.exports.run = async function ({ event, api, args }) {
  const one = senderID, two = mention[0];
  return makeImage({ one, two }).then(path => api.sendMessage({
  body: "╔═════❖••° °••❖═════╗\n" +
- " ভালোবাসার সেরা জুটি 💘\n" +
+ " piyar ki khubsurat jodi💘\n" +
  "╚═════❖••° °••❖═════╝\n\n" +
  " ✶⊶⊷⊷⊷⊷❍⊶⊷⊷⊷⊷✶\n" +
- " 👑 এই নে! এখন থেকে শুধু তোরই ❤️\n" +
- " 💌 তোর একমাত্র বয়ফ্রেন্ড হাজির 🩷\n" +
+ " 👑 yelo janu apka bf  ❤️\n" +
+ " 💌 ab mat bolna me singl hu 🩷\n" +
  " ✶⊶⊷⊷⊷⊷❍⊶⊷⊷⊷⊷✶",
  attachment: fs.createReadStream(path)
  }, threadID, () => fs.unlinkSync(path), messageID));
