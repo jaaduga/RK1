@@ -15,7 +15,7 @@ module.exports.languages = {
 		"missingReply": "Hãy reply tin nhắn cần gỡ."
 	},
 	"en": {
-		"returnCant": "কি unsent করমু replig করে বলো সুনা🫰",
+		"returnCant": "kiya unsent kru me replig muje btao to🫰",
 		"missingReply": "Mere Jis Msg ko Unsend Karna Hai Usme Reply Karke Likkho."
 	}
 }
