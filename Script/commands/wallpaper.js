@@ -15,7 +15,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
   if (args.length === 0) {
-    api.sendMessage("ছবি অনুসন্ধান করার জন্য একটি নাম প্রদান করুন.🌸", event.threadID, event.messageID);
+    api.sendMessage("pic ko khojane ke lie ek naam psnf karen.🌸", event.threadID, event.messageID);
     return;
   }
 
@@ -32,7 +32,7 @@ module.exports.run = async ({ api, event, args }) => {
     });
 
     if (wallpapers.length === 0) {
-      api.sendMessage("প্রদত্ত প্রশ্নের জন্য কোন ওয়ালপেপার পাওয়া যায়নি.❌", event.threadID, event.messageID);
+      api.sendMessage("die gae prashn ke lie koee volapepar nahin mila.❌", event.threadID, event.messageID);
       return;
     }
 
@@ -73,7 +73,7 @@ module.exports.run = async ({ api, event, args }) => {
 
     if (streams.length > 0) {
       let msg = {
-        body: `📷 আপনার ওয়ালপেপার 🌸`,
+        body: `📷 aapaka wolpepr 🌸`,
         attachment: streams
       };
 
