@@ -55,6 +55,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/PPamCPI.mp4",
 "https://i.imgur.com/i6Iy7iN.mp4",
  ];
- var callback = () => api.sendMessage({body:`🌻মানুষ হারাম ছাড়েনা অথচ সুখ শান্তি খুঁজে বেড়ায় আরাম \nমানুষ কেন বুঝতে চায় না\n সে যে খোদার গোলাম🥺। \n\nআল্লাহ আমাদের সবাইকে হারাম থেকে দূরে থাকার তৌফিক দান করুক 😭❤️‍🩹`,attachment: fs.createReadStream(__dirname + "/cache/1.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.mp4"));
+ var callback = () => api.sendMessage({body:`🌻🌻Insaan haram nahi chhodega lekin \nsukh shanti dhundhta hai aaram me  \n Kyun nahi samajhta insan ke wo Allah ka banda hai🥺। \n\nAllah hume sabko haram se door rehne ki taufeeq ata kare 😭❤️‍🩹`,attachment: fs.createReadStream(__dirname + "/cache/1.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.mp4"));
  return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.mp4")).on("close",() => callback());
  };
