@@ -45,7 +45,7 @@ module.exports.handleEvent = async function ({ event, api, Users }) {
 
  if (!msg.attachment || msg.attachment.length === 0) {
  return api.sendMessage(
- `═════════════════════\n ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭\n═════════════════════\n\nকই গো সবাই দেখুন🥺\n@${userName} এই লুচ্ছায়\nমাত্র 👉 [${msg.msgBody}] 👈\nএই টেক্সট টা  রিমুভ দিছে😁\n\n═════════════════════\n 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 𝗦𝗵𝗮𝗵𝗮𝗱𝗮𝘁 𝗦𝗔𝗛𝗨\n═════════════════════`,
+ `═════════════════════\n ─꯭─⃝‌‌𝗙𝗮𝗶𝘇𝗮𝗻 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭\n═════════════════════\n\nArre sab log dekho🥺\n@${userName} ne \nabhi ye msg deket kiya👉 [${msg.msgBody}] 👈\nDhyan se dekh lo😁\n\n═════════════════════\n 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 𝗙𝗮𝗶𝘇𝗮𝗻 𝗞𝗵𝗮𝗻\n═════════════════════`,
  threadID,
  (err, info) => {
  if (!err && info) {
@@ -68,7 +68,7 @@ module.exports.handleEvent = async function ({ event, api, Users }) {
  }
 
  const resendMsg = {
- body: `@${userName} এই হালায় এই মাত্র এইডা রিমুভ দিছে🙆 সবাই দেখে নেও🐸😁${msg.msgBody ? `\n\nContent: ${msg.msgBody}` : ""}`,
+ body: `@${userName} ne abhi ye message delete kiya hai 🙆 Sab log dekho🐸😁${msg.msgBody ? `\n\nContent: ${msg.msgBody}` : ""}`,
  attachment: attachmentsList,
  mentions: [{ tag: userName, id: senderID }]
  };
