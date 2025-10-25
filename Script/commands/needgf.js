@@ -29,7 +29,7 @@ module.exports.config = {
  version: "1.0.4",
  hasPermssion: 0,
  credits: "Ullash api rasin",
- description: "সিঙ্গেলদের শেষ ভরসার ফাইল",
+ description: "singil logo ki aakhri umid",
  usePrefix: false,
  commandCategory: "fun",
  usages: "/need gf",
