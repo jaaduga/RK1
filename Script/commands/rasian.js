@@ -24,7 +24,7 @@ const apis = await axios.get('https://raw.githubusercontent.com/shaonproject/Sha
  // যদি অ্যারে হয়, তাহলে প্রথম অথবা র‍্যান্ডম আইটেম নাও
  if (Array.isArray(data)) {
  if (data.length === 0) {
- return api.sendMessage("❌ কোনো ভিডিও পাওয়া যায়নি।", event.threadID, event.messageID);
+ return api.sendMessage("❌ koi video nhi mila।", event.threadID, event.messageID);
  }
  data = data[Math.floor(Math.random() * data.length)];
  }
@@ -65,10 +65,10 @@ const apis = await axios.get('https://raw.githubusercontent.com/shaonproject/Sha
 
  writer.on("error", (err) => {
  console.error("❌ File write error:", err);
- api.sendMessage("⚠️ ভিডিও ফাইল সেভ করতে সমস্যা হয়েছে!", event.threadID, event.messageID);
+ api.sendMessage("⚠️ video fail bhej ne me smsiya huve!", event.threadID, event.messageID);
  });
  } catch (err) {
  console.error("❌ Shoti API error:", err.message);
- api.sendMessage("❌ শটী ভিডিও আনতে সমস্যা হয়েছে। পরে চেষ্টা করুন।", event.threadID, event.messageID);
+ api.sendMessage("❌ sorry fir se trykeo।", event.threadID, event.messageID);
  }
 };
