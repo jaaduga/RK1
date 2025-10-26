@@ -46,7 +46,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
     "cudi": "kehna kiya chate ho..!🥱🌝🌚",
     "bal": "ye ki he 🥰",
     "heda": "tera sir fod duga🥰",
-    "chikni": "ha bolne chikni..!🌚🤣",
+    "chikni": "ha bolne chikni..!🌚🤣😂",
     "love you": "😘",
     "kiya kr rhe ho": "tumse bat",
     "fiza": "meri malkin bsy he btao muje me kehduga 😘😽🙈"
